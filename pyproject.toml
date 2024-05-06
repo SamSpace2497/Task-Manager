@@ -1,0 +1,20 @@
+[project]
+name = "task_manager"
+authors = [
+    { name = "Shubham Patil", email = "mailtotaskmanager@gmail.com"}
+]
+description = "The Task Manager app is a comprehensive tool designed to streamline task management for individuals or teams. With intuitive features and a user-friendly interface, it enables users to efficiently organize, track, and prioritize tasks to boost productivity and meet project deadlines effectively."
+requires-python = ">=3.10"
+readme = "README.md"
+dynamic = ["version"]
+dependencies = [
+    # "frappe~=15.0.0" # Installed and managed by bench.
+]
+
+[build-system]
+requires = ["flit_core >=3.4,<4"]
+build-backend = "flit_core.buildapi"
+
+# These dependencies are only installed when developer mode is enabled
+[tool.bench.dev-dependencies]
+# package_name = "~=1.1.0"
